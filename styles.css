@@ -1,18 +1,53 @@
 /* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: black; /* Cambiar el fondo a negro */
-    color: white; /* Cambiar el color del texto a blanco */
+    background-color: black;
+    color: white;
 }
 
 h1 {
     text-align: center;
 }
 
-.coin {
-    margin-bottom: 10px;
+.coinContainer {
+    display: flex;
+    justify-content: space-around;
 }
 
-.green {
-    color: green;
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.high {
+    background-color: limegreen;
+}
+
+.low {
+    background-color: lightgreen;
+}
+
+.red {
+    background-color: red;
+}
+
+.subidas {
+    font-size: 20px;
+}
+
+.bajadas {
+    font-size: 20px;
+}
+
+.coinInfo {
+    margin-bottom: 5px;
+}
+
+.coinLink {
+    color: white;
+    text-decoration: none;
+}
+
+.coinLink:hover {
+    text-decoration: underline;
 }
