@@ -1,0 +1,18 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* Cambiar el fondo a negro */
+    color: white; /* Cambiar el color del texto a blanco */
+}
+
+h1 {
+    text-align: center;
+}
+
+.coin {
+    margin-bottom: 10px;
+}
+
+.green {
+    color: green;
+}
