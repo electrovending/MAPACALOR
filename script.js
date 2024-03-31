@@ -12,6 +12,9 @@ async function displayCoins() {
 
     const coins = await fetchData();
 
+    // Ordenar las monedas de mayor a menor aumento
+    coins.sort((a, b) => parseFloat(b.priceChangePercent) - parseFloat(a.priceChangePercent));
+
     coins.forEach(coin => {
         const symbol = coin.symbol;
         const priceChangePercent = parseFloat(coin.priceChangePercent);
@@ -34,4 +37,4 @@ async function displayCoins() {
 
 // Call the displayCoins function initially and every 5 seconds for real-time updates
 displayCoins();
-setInterval(displayCoins, 5000);
+setInterval(displayCoins, 10000);
